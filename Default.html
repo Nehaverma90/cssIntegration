@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="css/myTest.css">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+</style>
+
+<script src="myTest.js"></script>
+
+</head>
+
+<body scroll="no">
+<div class="bg"></div>
+<div class="pushcrew-chrome-style-notification pushcrew-chrome-style-notification-safari" id ="optin" style="display: none">
+  <div class="pushcrew-safari-notification-inner-wrapper">
+    <div class="pushcrew-notification-image-wrapper-safari">
+      <img src="https://cdn.pushcrew.com/img/logos/ed74bdf1c35aab34b7c9d26cc89b2d2e/d4e3089b-78bb-4a7a-911a-64ab88000238.png">
+    </div>
+    <div class="pushcrew-text-wrapper-safari">
+      <span class="pushcrew-notification-title-safari">
+        Neha Verma wants to send you notifications
+      </span>
+      <p class="pushcrew-notification-message-safari">
+        Only alerts relevant to your demo needs!!!
+      </p>
+    </div>
+    <div style="clear: both;">
+    <div class="pushcrew-button-wrapper">
+        <button class="pushcrew-chrome-style-notification-btn pushcrew-btn-close">
+            Don't Allow
+        </button>
+        <button class="pushcrew-chrome-style-notification-btn pushcrew-btn-allow">
+            Allow
+        </button>
+     </div>
+
+
+     <div style="clear:both">
+     </div>
+   </div>
+ </div>
+</div>
+<div class="class1"><h1>Templates Style</h1>
+<button class="pushcrew-chrome-style-btnright" id="b1" onclick ="defaultPostion()">Default Style</button><br>
+<button class="pushcrew-chrome-style-btnright" onclick="moveRight()" id ="rightSide"> Right </button><br>
+<button class ="pushcrew-chrome-style-btnright" onclick="moveLeft()" id ="leftSide"> Left</button><br>
+<button class ="pushcrew-chrome-style-btnright" onclick="moveCenter()" id ="moveCenter"> Center </button><br>
+<button class="pushcrew-chrome-style-btnright" onclick="moveBottomRight()" id ="moveBottomRight">Bottom Right </button><br>
+<button class ="pushcrew-chrome-style-btnright" onclick="moveBottomLeft()" id ="moveBottomLeft">Bottom Left </button><br>
+</div>
+<div class="class2">
+<span><h1 style="margin-left: 20px">Customize Pixel</h1></span>
+<label for="LeftMargin" style="font-size: 20px;margin-left: 20px">Left Margin:</label>
+<input type="number" min ="0" name="leftValue" value="" id ="leftMarginValue"><br><br>
+<label for="topMargin" style="font-size: 20px;margin-left: 20px">Top Margin:</label>
+<input type="number" min ="0" name="leftValue" value="" id ="topMarginValue"><br><br>
+<input type="submit" class ="pushcrew-chrome-style-notification-btnright" style = "margin-top: 50px;margin-left: 55px" value="Submit" onclick="setOptinPostion()">
+</div>
+<div class="class3">
+  <p class ="p" id ="dataValue">
+  </p>
+  </div>
+</body>
+</html>
